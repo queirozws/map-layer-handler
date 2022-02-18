@@ -1,0 +1,12 @@
+.map-container {
+    background-color: yellow;
+    color: red;
+    height: 100%;
+    width: 100%;
+}
+
+#map {
+    height: 85vh;
+    width: 75vw;
+}
+
