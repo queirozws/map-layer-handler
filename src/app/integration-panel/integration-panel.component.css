@@ -1,0 +1,24 @@
+.integration-panel {
+    background-color: rgba(0, 119, 255, 0.37);
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    padding-inline: 10px;
+}
+
+/* div {
+    padding: 0px;
+    margin: 15px;
+} */
+
+li {
+    list-style-type: none;
+    display: inline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: yellow;
+}

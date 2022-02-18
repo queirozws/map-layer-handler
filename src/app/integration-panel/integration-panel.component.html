@@ -1,0 +1,23 @@
+<div class="integration-panel">
+    <h2>integration-panel works!</h2>
+    <ul>
+        <li *ngFor="let layer of layers$">
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <input type="checkbox" name="" id="">
+                        <p>{{ layer.name }}</p>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul *ngIf="layer.legend?.params?.layers[0][0]">
+                    <li *ngFor="let layer2 of layer.legend.params.layers">
+                        <p>{{ layer2 }}</p>
+                    </li>
+                </ul>
+            </mat-expansion-panel>
+        </li>
+    </ul>
+</div>
+
+
+<!-- <li *ngFor="let layer of layers$ | async"></li> -->
