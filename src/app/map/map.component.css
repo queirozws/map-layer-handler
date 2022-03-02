@@ -1,12 +1,15 @@
-.map-container {
+/* .map-container {
     background-color: yellow;
     color: red;
-    height: 100%;
-    width: 100%;
-}
+    border: 5px;
+    height: 500px;
+    width: 500px;
+} */
 
 #map {
-    height: 85vh;
-    width: 75vw;
+    width: 1570px;
+    height: 927px;
+    z-index: 0;
 }
 
+/* style="height: 700px; width: 650px" */
