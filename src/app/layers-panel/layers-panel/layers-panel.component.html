@@ -1,0 +1,23 @@
+<div class="container">
+
+  <h2>Years</h2>
+
+  <app-filter-layer #filterYears></app-filter-layer>
+
+  <div class="list" cdkDropList #layerList="cdkDropList" [cdkDropListData]="filterYears.toppings.value" (cdkDropListDropped)="drop($event)">
+    <div class="list-year" *ngFor="let year of filterYears.toppings.value" cdkDrag>{{ slideToggle.checked }}
+
+      <mat-slide-toggle
+        #slideToggle
+        (change)="onChange(slideToggle.checked, year)">
+
+        {{ year }}
+
+      </mat-slide-toggle>
+      
+    </div>
+  </div>
+
+</div>
+  
+<!-- [(ngModel)]="checked" -->
